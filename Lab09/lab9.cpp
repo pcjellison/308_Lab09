@@ -1,11 +1,13 @@
+#include "Set.h"
 #include <cstdio>
 #include <iostream>
-#include "Set.h";
 using namespace std;
+void expandSet(Set &set);
 
 int main()
 {
-	Set *set = new Set(5);
+	Set *set;
+	set = new Set(5);
 	expandSet(*set);
 	set->print();
 }
